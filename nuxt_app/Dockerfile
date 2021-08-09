@@ -10,3 +10,5 @@ RUN yarn install
 RUN yarn run build
 
 ENV HOST 103.159.50.129
+
+RUN yarn start

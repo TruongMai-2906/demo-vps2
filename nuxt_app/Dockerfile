@@ -9,6 +9,6 @@ ADD . ${APP_ROOT}
 RUN yarn install
 RUN yarn run build
 
-ENV HOST 103.159.50.129
+ENV HOST 127.0.0.1
 
 RUN yarn start

@@ -32,9 +32,9 @@ COPY package*.json ./
 RUN apk update
 RUN apk add --no-cache git
 
-RUN npm install --only=prod
+RUN yarn install --only=prod
 COPY . .
-RUN npm run build
+RUN yarn run build
 
 # production stage
 FROM nginx:stable-alpine as production-stage

@@ -25,7 +25,7 @@
 
 # build stage
 FROM node:10-alpine as build-stage
-RUN mkdir /usr/src/app
+
 WORKDIR /usr/src/app
 COPY package*.json ./
 

@@ -59,6 +59,7 @@ RUN apk add git
 
 # copy the app, note .dockerignore
 COPY . /usr/src/nuxt-app/
+COPY package*.json ./
 RUN yarn install
 
 # build necessary, even if no static files are needed,
